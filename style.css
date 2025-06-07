@@ -1,0 +1,125 @@
+html{
+    height: 100%; 
+}
+
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#articleHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/galaxy-night-panorama.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 35em; 
+    width: 100%; 
+    margin-bottom: 1em;
+}
+
+section > h1{
+    font-size: 4.5em;
+    margin: 0;
+}
+
+section > p{
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+/* ******************************************** */
+
+#articleBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 2em;
+    margin-right: 20em;
+    margin-left: 20em;
+}
+
+
+.articleImage{
+    width: 37.5em;
+    height: 31.25em;
+    margin-top: 1.2em;
+
+}
+
+
+.figureCaption{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 11px;
+    padding-right: 20em;
+    padding-left: 20em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+
+/* ****************************************** */
+.image-comparison{
+    max-width: 37.5em;
+    margin-top: 1.2em;
+}
+
+.image-comparison img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.image-comparison .images-container{
+    display: flex;
+    position: relative;
+}
+
+.image-comparison .before-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-comparison .slider{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+} 
+
+.image-comparison .slider-line{
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-comparison .slider-icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    color: white;
+    transform: translate(-50%, -50%) rotateZ(90deg);
+}
